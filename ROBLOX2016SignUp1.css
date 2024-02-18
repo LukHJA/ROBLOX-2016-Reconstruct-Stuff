@@ -1,0 +1,931 @@
+/* ROBLOX 2016 Sign Up 1 */
+  /* Old Font [Font used from Roblox in 2016 By Ologist]
+  Links: 
+  https://userstyles.org/styles/178105/roblox-in-2016
+  */
+  
+  @font-face {
+    font-family:'Source Sans Pro';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGOode0-EuMkY--TSyExeINg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+@font-face {
+    font-family:'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlNV_2ngZ8dMf8fLgjYEouxg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+@font-face {
+    font-family:'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGCOFnW3Jk0f09zW_Yln67Ac.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+@font-face {
+    font-family:'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(https://web.archive.org/web/20160629235641im_/https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGEo0As1BFRXtCDhS66znb_k.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+* {
+    font-family:"Source Sans Pro", Arial, Helvetica, sans-serif !important;
+}
+/* Sign Up Page */
+body {
+    background-color: #ffffff!important;
+}
+  #RollerContainer.rollercoaster-background
+  {
+    background-image: url('http://images.rbxcdn.com/dcbdfaf1c08058e71f65c09f7b98ff04.jpg');
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: unset !important;
+  }
+.signup-container.theme-bg.rbx-login-form {
+    max-width: 435px !important;
+    width: 465px !important;
+    box-sizing: initial !important;
+}
+.lower-logo-container {
+    display: inline-block;
+    padding: 0;
+    position: relative;
+    top: 200px;
+}
+
+  #InnerRollerContainer
+  {
+    background-image: none;
+  }
+
+  .lower-logo-container
+  {
+    background-color: #0000 !important;
+  }
+
+  .dark-theme .theme-bg
+  {
+    background-color: #fffffff2;
+    border-radius: 0px;
+  }
+
+  .form-control
+  {
+    display: block;
+    width: 100%;
+    background-color: #fff !important;
+    background-image: none;
+    border: 1px solid #b8b8b8 !important;
+    border-radius: 6px !important;
+  }
+
+  .signup-or-log-in .fake-input-lg
+  {
+    border-radius: 3px !important;
+  }
+/* Input Field trash */
+  .input-field:focus
+  {
+    box-shadow: none;
+    border-color: #00A2FF !important;
+  }
+
+  .has-error .form-control:focus
+  {
+    border-color: #843534 !important;
+    -webkit-box-shadow: inset 0 1px 1px #00000014, 0 0 6px #ce8483 !important;
+    box-shadow: inset 0 1px 1px #00000014, 0 0 6px #ce8483 !important;
+  }
+
+  .has-error .form-control
+  {
+    border-color: #843534 !important;
+  }
+
+  .has-success .form-control:focus
+  {
+    border-color: #2b542c !important;
+    -webkit-box-shadow: inset 0 1px 1px #00000014, 0 0 6px #67b168 !important;
+    box-shadow: inset 0 1px 1px #00000014, 0 0 6px #67b168 !important;
+  }
+
+  .has-success .form-control
+  {
+    border-color: #2b542c !important;
+  }
+/* Birthday */
+  #signup > div.signup-or-log-in.new-username-pwd-rule > div > div.signup-input-area.ng-invalid.ng-invalid-validusername.ng-invalid-password.ng-dirty.ng-valid-parse.ng-valid-birthday > div.birthday-container > div > label
+  {
+    cursor: inherit;
+    font-size: 0;
+  }
+
+  .dark-theme .birthday-container .rbx-select-group .rbx-select
+  {
+    background: url('http://static.rbxcdn.com/images/Upgrades/Purchase/icon_downarrow.svg') no-repeat scroll 98% 9px #fff !important;
+    height: 44px !important;
+    color: #191919 !important;
+    font-weight: 300;
+    font-size: 18px;
+  }
+
+  .dark-theme .birthday-container .rbx-select-group .rbx-select:hover
+  {
+    background-color: #00A2FF !important;
+    background-image: url(http://static.rbxcdn.com/images/Upgrades/Purchase/icon_downarrow_on.svg) !important;
+    color: #fff !important;
+  }
+
+  .signup-container .birthday-container .rbx-select-group.month
+  {
+    width: 33%;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .signup-container .birthday-container .rbx-select-group.day
+  {
+    width: 20%;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .signup-container .birthday-container .rbx-select-group.year
+  {
+    width: 23%;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .signup-container .birthday-container .rbx-select-group:first-of-type .rbx-select
+  {
+    border-right: 1px solid #b8b8b8;
+    border-left: 1px solid #b8b8b8;
+    border-top: 0;
+    border-bottom: 0;
+    margin-left: 25px;
+  }
+
+  .signup-container .birthday-container .rbx-select-group:nth-of-type(2) .rbx-select
+  {
+    border-color: #b8b8b8;
+  }
+
+  .signup-container .birthday-container .rbx-select-group.month
+  {
+    margin-left: 99px;
+  }
+
+  .dark-theme .rbx-select-group .rbx-select option:checked
+  {
+    color: #191919 !important;
+    background-color: #ffffff !important;
+  }
+
+  .dark-theme .rbx-select-group .rbx-select option, .dark-theme .rbx-select-group .select-option option, .dark-theme .select-group .rbx-select option, .dark-theme .select-group .select-option option
+  {
+    color: #191919 !important;
+    background-color: #ffffff !important;
+  }
+
+  .signup-container .birthday-container .rbx-select-group.month::before
+  {
+    content: 'Birthday';
+    margin-left: -91px;
+    color: #191919;
+    font-weight: 300;
+    font-size: 18px !important;
+    display: inline-block !important;
+    cursor: default !important;
+  }
+/* Username / Pasword */
+  .signup-container .form-control
+  {
+    font-size: 20px !important;
+    height: 46px !important;
+    padding-right: 40px;
+  }
+
+  input#signup-password
+  {
+    padding: 5px 12px;
+  }
+
+  input#signup-username
+  {
+    padding: 5px 12px;
+  }
+/* Male / Female */
+  .gender-female
+  {
+    background-image: url('http://images.rbxcdn.com/a0afd0556163477e1023c5aa55d1b9f6.png') !important;
+    background-position: 6.75px 2px !important;
+    width: 32px;
+    margin: 0;
+    margin-left: 0 !important;
+    position: relative;
+    top: -1px;
+    left: -1px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #b8b8b8;
+  }
+
+  .gender-icon.gender-female.gender-selected
+  {
+    border-color: #D86868;
+    background-position: -24px !important;
+  }
+
+  #FemaleButton
+  {
+    border-right: 0;
+    width: 32px !important;
+    height: 32px;
+    padding: 0;
+    float: left;
+    position: relative;
+    margin: 0px 86px;
+    margin-left: 135px !important;
+    top: 7px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .signup-container .gender-button:focus
+  {
+    border: 0px solid #fff!important;
+  }
+
+  .gender-male
+  {
+    background-image: url('http://images.rbxcdn.com/856241927a2ac609e3033feada3ef9f9.png') !important;
+    background-position: 8.75px 2px !important;
+    width: 32px;
+  margin: 0;
+    margin-left: 0 !important;
+    position: relative;
+    top: -1px;
+    left: -1px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #b8b8b8;
+  }
+
+  .gender-icon.gender-male.gender-selected
+  {
+    border-color: #32B5FF;
+    background-position: -22px 2px !important;
+  }
+
+  #MaleButton
+  {
+    border-right: 0;
+    width: 32px !important;
+    height: 32px;
+    padding: 0;
+    float: left;
+    position: relative;
+    margin: 0px 0px;
+    top: 7px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  #signup > div > div > div > div.gender-container > label::before
+  {
+    content: "Gender";
+    font-size: 18px !important;
+    top: 15px;
+    left: 13px;
+    position: relative;
+    display: inline-block !important;
+    cursor: inherit !important;
+  }
+
+  #signup > div > div > div > div.gender-container > label
+  {
+    color: #191919;
+    font-weight: 300;
+    position: relative;
+    font-size: 0px;
+    line-height: 18px;
+    display: block !Important;
+    height: 0px;
+    margin: 0px;
+  }
+/* Fixes */
+  .signup-or-log-in .signup-container .signup-input-area .legal-text-container div
+  {
+    font-size: 14px;
+    color: #191919;
+  }
+
+  .signup-or-log-in .input-validation
+  {
+    min-height: 0px;
+  }
+
+  .form-group
+  {
+    height: 77px !important;
+  }
+
+  .form-group.has-error
+  {
+    height: 77px !important;
+  }
+
+  .form-group.has-success
+  {
+    height: 77px !important;
+  }
+
+  label.ng-binding.font-caption-header
+  {
+    color: #fff0;
+    font-size: 0;
+  }
+
+  #signup > div.signup-or-log-in.new-username-pwd-rule > div > div.signup-input-area.ng-invalid.ng-invalid-validusername.ng-invalid-password.ng-dirty.ng-valid-parse.ng-valid-birthday > div.gender-container > div
+  {
+    height: 46px !important;
+  }
+/* Sign Up Button And Log In Button */
+  .dark-theme .btn-primary-md
+  {
+    user-select: none;
+    border: 1px solid #02b757;
+    background-color: #02b757;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    height: auto;
+    transition: all 0s ease 0s, all 0.2s ease 0s, all 0s ease-in-out 0s !important;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    padding: 9px;
+    font-size: 18px;
+    line-height: 100%;
+    border-radius: 3px !important;
+  }
+
+  .dark-theme .btn-primary-md:hover, .dark-theme .btn-primary-md:focus
+  {
+    background-color: #3fc679;
+    box-shadow: #969696bd 0px 1px 3px;
+    border-color: #3fc679;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0s ease 0s, all 0.2s ease 0s, all 0s ease-in-out 0s !important;
+    font-weight: 400 !important;
+  }
+
+  .dark-theme .btn-primary-md:active
+  {
+    background-color: #3fc679;
+    box-shadow: none;
+    border-color: #02b757;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0s ease 0s, all 0.2s ease 0s, all 0s ease-in-out 0s !important;
+    font-weight: 400 !important;
+  }
+
+  .dark-theme .btn-primary-md:hover:active
+  {
+    background-color: #3fc679;
+    box-shadow: none;
+    border-color: #3fc679;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0s ease 0s, all 0.2s ease 0s, all 0s ease-in-out 0s !important;
+    font-weight: 400 !important;
+  }
+
+  #main-login-button
+  {
+    background-color: #00b259 !important;
+    border: 1px solid transparent !important;
+    color: white !important;
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    border-radius: 3px;
+    width: 61.453px !important;
+    padding: 6px 12px !important;
+    min-width: 0px !important;
+    height: 32px !important;
+    line-height: 17px !important;
+  }
+
+  #SignUpFormContainer > div > div > div > div.signup-container.ng-scope > div > div.gender-container > div > div .has-success
+  {
+    border-color: #2b542c !important;
+  }
+
+  .signup-container .birthday-container .birthday-select-group
+  {
+    border-radius: 3px !important;
+  }
+/* SIGN UP AND START HAVING FUN! */
+  h3.signup-header
+  {
+    font-size: 24px !important;
+    font-weight: 300 !important;
+    color: #000;
+  }
+
+  label.font-caption-header 
+  {
+    display: none;
+  }
+
+  .signup-input-area.ng-invalid.ng-invalid-validusername.ng-invalid-password.ng-dirty.ng-valid-parse.ng-valid-birthday
+  {
+    height: 429.188px !Important;
+    margin-top: -26px;
+  }
+/* Text Logo */
+  .icon-default-logo
+  {
+    background-image: url(http://images.rbxcdn.com/39ae3ca577c8488487ef492031b8e264.png) !important;
+    background-position: 0px 0px !important;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    margin: 0px 0px !important;
+    z-index: 1 !important;
+    width: 460px !important;
+  height: 115px !important;
+}
+/* Sign Up Page General */
+.btn-primary-md[disabled] {
+  border: 1px solid #02b757 !important;
+    background-color: #02b757 !important;
+  opacity: .7 !important;
+  color: #fff !important;
+}
+  #signup-container
+  {
+    width: 50% !important;
+    float: right !important;
+  }
+
+  .dark-theme .theme-bg
+  {
+    background-color: #fffffff2;
+    border-radius: 0px;
+    float: left;
+    margin: 0;
+  }
+
+  #signup-container
+  {
+    width: 50% !important;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    margin-right: 0;
+  }
+
+  #signup-container #signup-header-container #signup-header
+  {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 465px;
+    float: left;
+  }
+
+#signup-container #signup-header-container {
+    height: 80px;
+    position: absolute;
+    top: 125px;
+    width: 461px !important;
+    left: -475px;
+    float: right !important;
+}
+
+  .icon-default-logo::before
+  {
+    content: "Powering Imagination" !important;
+    color: white !important;
+    font-size: 35px !important;
+    background-color: #000000b3 !important;
+    padding: 10px 25px !important;
+    text-align: center;
+    margin-top: -20px !important;
+    display: inline-block;
+    position: relative;
+    top: 116px;
+    left: 23px;
+    height: 65.488px !important;
+    font-weight: 300;
+    line-height: 42px;
+    z-index: -1 !important;
+  }
+
+  .icon-default-logo::after
+  {
+    content: " ™ ";
+    font-size: 15px !Important;
+    font-weight: 300 !important;
+    position: relative;
+    top: 99px;
+    left: -6px;
+  }
+/* Bottom */
+  .container-footer
+  {
+    z-index: 3;
+    background-color: #ffffff!important;
+  }
+
+  .copyright-container .language-selector-wrapper .input-group-btn
+  {
+    display: none;
+  }
+
+  .copyright-container .footer-note
+  {
+    text-align: left;
+    margin: 0px 0px 0px -80px;
+    width: auto;
+    color: #b8b8b8 !important;
+    border: 0px solid !important;
+  }
+
+  .dark-theme .copyright-container
+  {
+    border: 0px solid;
+    padding: 0;
+  }
+
+  a.text-footer-nav:hover
+  {
+    color: #191919 !important;
+  }
+
+  a.text-footer-nav.privacy
+  {
+    color: #b8b8b8 !important;
+  }
+
+  a.text-footer-nav.privacy:hover
+  {
+    color: #191919 !important;
+  }
+
+  a.text-footer-nav
+  {
+    font-size: 21px !important;
+    font-weight: 300 !important;
+  }
+
+  #signup > div.signup-or-log-in.new-username-pwd-rule > div > div.signup-input-area.ng-invalid.ng-invalid-password.ng-dirty.ng-valid-parse.ng-valid-birthday.ng-valid-validusername.ng-invalid-unique.ng-valid-moderated > div.birthday-container > div
+  {
+    height: 77px !important;
+    margin-top: -31px;
+  }
+
+  #signup > div.signup-or-log-in.new-username-pwd-rule > div > div.signup-input-area.ng-invalid.ng-invalid-password.ng-dirty.ng-valid-parse.ng-valid-birthday.ng-valid-validusername.ng-invalid-unique.ng-valid-moderated > div.gender-container > div
+  {
+    height: 46px !important;
+  }
+
+  #signup > div.signup-or-log-in.new-username-pwd-rule > div > div.signup-input-area.ng-invalid.ng-invalid-password.ng-dirty.ng-valid-parse.ng-valid-birthday.ng-valid-validusername.ng-valid-moderated.ng-valid-unique > div.gender-container > div
+  {
+    height: 46px !important;
+  }
+
+  #signup > div.signup-or-log-in.new-username-pwd-rule > div > div.signup-input-area.ng-dirty.ng-valid-parse.ng-valid-birthday.ng-valid-validusername.ng-valid-moderated.ng-valid-unique.ng-valid.ng-valid-password > div.gender-container > div
+  {
+    height: 46px !important;
+  }
+
+  #signup > div.signup-or-log-in.new-username-pwd-rule > div > div.signup-input-area.ng-invalid.ng-dirty.ng-valid-parse.ng-valid-birthday.ng-valid-validusername.ng-invalid-unique.ng-valid-moderated.ng-valid-password > div.gender-container > div
+  {
+    height: 46px !important;
+  }
+
+  #signup > div.signup-or-log-in.new-username-pwd-rule > div > div.signup-input-area.ng-dirty.ng-valid-parse.ng-valid-birthday.ng-valid-moderated.ng-invalid.ng-invalid-unique.ng-valid-password.ng-invalid-validusername > div.gender-container > div
+  {
+    height: 46px !important;
+  }
+
+  #signup > div.signup-or-log-in.new-username-pwd-rule > div > div.signup-input-area.ng-invalid.ng-invalid-validusername.ng-dirty.ng-valid-parse.ng-valid-birthday.ng-valid-password > div.gender-container > div
+  {
+    height: 46px !important;
+  }
+
+  #signup > div.signup-or-log-in.new-username-pwd-rule > div > div.signup-input-area.ng-invalid.ng-invalid-password.ng-dirty.ng-valid-parse.ng-valid-birthday.ng-valid-validusername.ng-invalid-unique.ng-valid-moderated > div.gender-container > label::before
+  {
+    content: "Gender";
+    font-size: 18px !important;
+    top: 41px;
+    left: 13px;
+    position: relative;
+    display: inline-block !important;
+    cursor: inherit !important;
+    color: #000 !important;
+    font-weight: 300;
+  }
+
+  #signup > div.signup-or-log-in.new-username-pwd-rule > div > div.signup-input-area.ng-invalid.ng-dirty.ng-valid-parse.ng-valid-birthday.ng-valid-validusername.ng-invalid-unique.ng-valid-moderated.ng-valid-password > div.gender-container > label::before
+  {
+    content: "Gender";
+    font-size: 18px !important;
+    top: 41px;
+    left: 13px;
+    position: relative;
+    display: inline-block !important;
+    cursor: inherit !important;
+    color: #000 !important;
+    font-weight: 300;
+  }
+
+  #signup > div.signup-or-log-in.new-username-pwd-rule > div > div.signup-input-area.ng-invalid.ng-invalid-password.ng-dirty.ng-valid-parse.ng-valid-birthday.ng-valid-validusername.ng-valid-moderated.ng-valid-unique > div.gender-container > label::before
+  {
+    content: "Gender";
+    font-size: 18px !important;
+    top: 41px;
+    left: 13px;
+    position: relative;
+    display: inline-block !important;
+    cursor: inherit !important;
+    color: #000 !important;
+    font-weight: 300;
+  }
+
+  #signup > div.signup-or-log-in.new-username-pwd-rule > div > div.signup-input-area.ng-dirty.ng-valid-parse.ng-valid-birthday.ng-valid-validusername.ng-valid-moderated.ng-valid-unique.ng-valid.ng-valid-password > div.gender-container > label::before
+  {
+    content: "Gender";
+    font-size: 18px !important;
+    top: 41px;
+    left: 13px;
+    position: relative;
+    display: inline-block !important;
+    cursor: inherit !important;
+    color: #000 !important;
+    font-weight: 300;
+  }
+
+  #signup > div.signup-or-log-in.new-username-pwd-rule > div > div.signup-input-area.ng-invalid.ng-invalid-validusername.ng-dirty.ng-valid-parse.ng-valid-birthday.ng-valid-password > div.gender-container > label::before
+  {
+    content: "Gender";
+    font-size: 18px !important;
+    top: 41px;
+    left: 13px;
+    position: relative;
+    display: inline-block !important;
+    cursor: inherit !important;
+    color: #000 !important;
+    font-weight: 300;
+  }
+
+  #signup > div.signup-or-log-in.new-username-pwd-rule > div > div.signup-input-area.ng-invalid.ng-dirty.ng-valid-parse.ng-valid-birthday.ng-valid-validusername.ng-invalid-unique.ng-valid-moderated.ng-valid-password > div.gender-container > label
+  {
+    height: 24.39px !important;
+  }
+
+  #signup > div.signup-or-log-in.new-username-pwd-rule > div > div.signup-input-area.ng-invalid.ng-invalid-validusername.ng-dirty.ng-valid-parse.ng-valid-birthday.ng-valid-password > div.gender-container > label
+  {
+    height: 24.39px !important;
+  }
+
+  #signup > div.signup-or-log-in.new-username-pwd-rule > div > div.signup-input-area.ng-dirty.ng-valid-parse.ng-valid-birthday.ng-valid-validusername.ng-valid-moderated.ng-valid-unique.ng-valid.ng-valid-password > div.gender-container > label
+  {
+    height: 24.39px !important;
+  }
+
+  #signup > div.signup-or-log-in.new-username-pwd-rule > div > div.signup-input-area.ng-invalid.ng-invalid-password.ng-dirty.ng-valid-parse.ng-valid-birthday.ng-valid-validusername.ng-valid-moderated.ng-valid-unique > div.gender-container > label
+  {
+    height: 24.39px !important;
+  }
+
+  #signup > div.signup-or-log-in.new-username-pwd-rule > div > div.signup-input-area.ng-invalid.ng-invalid-password.ng-dirty.ng-valid-parse.ng-valid-birthday.ng-valid-validusername.ng-invalid-unique.ng-valid-moderated > div.gender-container > label
+  {
+    height: 24.39px !important;
+  }
+
+  .text-footer.footer-note:after
+  {
+    margin-top: 12px;
+    margin-left: 24px;
+  }
+
+  #signup > div.signup-or-log-in.new-username-pwd-rule > div > div.signup-input-area.ng-dirty.ng-valid-parse.ng-valid-birthday.ng-valid-moderated.ng-valid-validusername.ng-valid-unique.ng-valid.ng-valid-password > div.birthday-container
+  {
+    margin-top: -31px;
+  }
+
+  #signup > div.signup-or-log-in.new-username-pwd-rule > div > div.signup-input-area.ng-invalid.ng-invalid-password.ng-dirty.ng-valid-parse.ng-valid-birthday.ng-valid-moderated.ng-valid-validusername.ng-valid-unique > div.birthday-container
+  {
+    margin-top: -31px;
+  }
+
+  #signup > div.signup-or-log-in.new-username-pwd-rule > div > div.signup-input-area.ng-dirty.ng-valid-parse.ng-valid-birthday.ng-valid-moderated.ng-invalid.ng-valid-validusername.ng-invalid-unique.ng-valid-password > div.birthday-container
+  {
+    margin-top: -31px;
+  }
+
+  #signup > div.signup-or-log-in.new-username-pwd-rule > div > div.signup-input-area.ng-dirty.ng-valid-parse.ng-valid-birthday.ng-valid-moderated.ng-invalid.ng-invalid-unique.ng-valid-password.ng-invalid-validusername > div.birthday-container
+  {
+    margin-top: -31px;
+  }
+
+  #signup > div.signup-or-log-in.new-username-pwd-rule > div > div.signup-input-area.ng-invalid.ng-invalid-validusername.ng-dirty.ng-valid-parse.ng-valid-birthday.ng-valid-password > div.birthday-container > div
+  {
+    margin-top: -31px;
+  }
+/* Fixes */
+.signup-or-log-in .signup-container .signup-input-area .legal-text-container-top-margin {
+    margin: 0px !important;
+}
+/* has() (read about :has() it's very important if you use firefox) arguments and some of good stuff */
+#signup > div > div > div.signup-input-area > div.gender-container > div > div:has(button > .gender-selected) {
+    border-color: #2b542c !important;
+}
+.signup-or-log-in .signup-container .signup-input-area .password-visibility-toggle.icon-password-show-v2 {
+  display: none;
+}
+#RollerContainer.rollercoaster-background {
+    min-height: 864px !important;
+    height: 100vh !important;
+}
+#landing-page-container\ dark-theme::after {
+    height: 100vh !important;
+  min-height: 864px !important;
+}
+div#app-stores-container {
+    position: absolute;
+    top: calc(200vh - 202px);
+  background: #fff;
+    padding-top: 110px;
+    padding-bottom: 0;
+    width: 100%;
+    left: 0;
+}
+div#app-stores-devices {
+    color: #000 !important;
+    margin: 0 auto 12px auto !important;
+    width: 100%;
+}
+@media (min-width: 992px) {
+div#app-stores-devices {
+width: 50% !important;
+margin-left: 25% !important;
+}
+}
+#app-stores > a.microsoft-badge.app-store-logo {
+  display: none;
+}
+#app-stores > a.xbox-badge.app-store-logo {
+  display: none;
+}
+#app-stores-container::after {
+  content: "";
+  width: 566px;
+  height: 403px;
+  background-image: url(http://images.rbxcdn.com/0ad1ae4bf929fb82cad6f30fdf03b6db.png);
+  background-repeat: no-repeat;
+  display:block;
+  background-size: contain;
+  margin: 0 auto;
+  margin-top: 20px !important;
+}
+#footer-container {
+    margin-top: 815px !important;
+}
+@media (min-width: 1200px)  {
+  #app-stores-container::after {
+    width: 100%;
+    background-image: url(https://images.rbxcdn.com/9edeef823842e76479587a57c05cb5bc.png);
+    background-position: 50% !important;
+    height: 587px;
+  }
+  #footer-container {
+      margin-top: 915px !important;
+  }
+}
+#app-stores-devices > h4 {
+  font-size: 36px !important;
+  padding: 0;
+  margin: 10px 0 !important;
+  font-weight: 300 !important;
+}
+#app-stores-devices::after {
+  content: "You can access ROBLOX on PC, Mac, iOS, Android, Amazon Devices, and Xbox One. ROBLOX adventures are accessible from any device, so players can imagine with their friends regardless of where they are." !important;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: none;
+  line-height: 1.4;
+  background: none !important;
+    position: static !important;
+}
+section#RollerContainer::before {
+    content: "WHAT IS ROBLOX?";
+    display: block !important;
+    position: absolute;
+    color: #fff;
+    font-size: 48px !important;
+    font-weight: 300;
+    top: 117.2vh !important;
+  width: 50%;
+  margin-left: 42%;
+  text-align:center;
+  line-height: 48px !important;
+}
+@media (max-width: 767px) {
+  section#RollerContainer::before {
+    background: rgba(0,0,0,0.7);
+    padding-top: 12px;
+    padding-bottom: 10px;
+    margin-left: 16.66667%;
+    width: calc(66.66667% + 24px) !important;
+    text-align: center;
+  }
+  section#RollerContainer::after {
+    background: rgba(0,0,0,0.7);
+    margin-left: 16.66667% !important;
+    font-size: 18px !important;
+    width: 66.66667% !important;
+    padding:12px;
+    box-sizing: content-box;
+    left:0 !important;
+  }
+}
+@media (max-width: 509px) {
+  section#RollerContainer::before {
+    margin-top: -48px;
+  }
+}
+.form-control-label.input-validation {
+    font-size: 16px;
+    font-weight: 300;
+    color: #D86868;
+}
+.signup-or-log-in .form-group {
+    height: 71px !important;
+}
+section#RollerContainer::after {
+    content: "ROBLOX is the best place to Imagine with Friends™. With the largest user-generated online gaming platform, and over 15 million games created by users, ROBLOX is the #1 gaming site for kids and teens (comScore). Every day, virtual explorers come to ROBLOX to create adventures, play games, role play, and learn with their friends in a family-friendly, immersive, 3D environment.";
+    display: block !important;
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    top: calc(117.2vh + 58px) !important;
+  margin: 12px;
+  width: calc(50% - 24px);
+  margin-left: 42%;
+  text-align:justify;
+  line-height: 1.4;
+}
+div#signup-header {
+    top: 0 !important;
+    overflow: visible !important;
+}
+
+@media (max-width: 991px) {
+  #signup-container {
+      width: 100% !important;
+  }
+  .signup-container {
+    margin: 0 auto !important;
+    float: none !important;
+  }
+  .lower-logo-container {
+    top: 100px !important;
+  }
+  div#signup-header-container {
+      margin: 0 auto !important;
+      position: relative !important;
+      left: 4px !important;
+      top: -97px !important;
+    margin-top: 40px !important;
+  }
+  .icon-logo::before {
+    font-size: 2.1em !important;
+  }
+}
+@media (max-height: 864px) {
+  section#RollerContainer::before {
+    top: 1040px !important;
+  }
+  section#RollerContainer::after {
+      top: calc(1040px + 58px) !important;
+  }
+  div#app-stores-container {
+    top: 1524px !important;
+  }
+}
